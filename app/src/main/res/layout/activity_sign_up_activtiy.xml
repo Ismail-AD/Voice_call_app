@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/calllogo"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="@dimen/_150sdp"/>
+
+    <TextView
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:lineHeight="36dp"
+        android:text="Register"
+        android:textSize="@dimen/_22ssp"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:lineHeight="22dp"
+        android:text="Hello there, register to continue"
+        android:textSize="@dimen/_14ssp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_user"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:cursorColor="@color/black"
+        android:layout_height="@dimen/_52sdp"
+        android:paddingHorizontal="@dimen/_18sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/su_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:hint="User Name"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_mail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:cursorColor="@color/black"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:paddingHorizontal="@dimen/_18sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/su_mail"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:cursorColor="@color/black"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/su_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/c_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:cursorColor="@color/black"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/su_cpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_icon"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/pg"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/purple_200"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:progressTint="@color/purple_200" />
+
+</LinearLayout>
